@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jashshah.zomatoapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/intro1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/intro1"
+        />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="154dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000"
+        android:layout_marginTop="20dp"
+        android:width="250sp"
+        android:text="View menus,photos and reviews for restaurents around you"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/theme_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search"
+        android:layout_alignStart="@+id/search"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="14dp"
+        android:width="250sp"
+        android:text="Explore detailed theme-based lists of top place in your city."
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/theme_list"
+
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="51dp"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_toStartOf="@+id/logo"
+        android:text="Sign up"
+        android:background="#ffffff"
+        android:id="@+id/signupBtn"
+        android:onClick="onClickedSignup"/>
+
+    <Button
+        android:id="@+id/signInBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signupBtn"
+        android:layout_alignBottom="@+id/signupBtn"
+        android:layout_toEndOf="@+id/logo"
+        android:layout_toRightOf="@+id/logo"
+        android:background="#ffffff"
+        android:text="Sign In"
+        android:onClick="onClickedSignin"
+        />
+
+    <ImageView
+        android:id="@+id/tvImage1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/search"
+        android:layout_toLeftOf="@+id/search"
+        android:layout_toStartOf="@+id/search"
+        android:background="@drawable/menu"
+        android:layout_marginRight="10dp"/>
+
+    <ImageView
+        android:id="@+id/tvImage2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+
+        android:layout_alignLeft="@+id/tvImage1"
+        android:layout_alignStart="@+id/tvImage1"
+        android:layout_alignTop="@+id/theme_list"
+        android:background="@drawable/theme_list"
+        android:layout_marginRight="10dp"/>
+
+
+
+</RelativeLayout>
